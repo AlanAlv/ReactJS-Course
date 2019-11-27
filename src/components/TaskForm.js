@@ -8,12 +8,11 @@ export default class TaskForm extends React.Component {
     }
 
     onSubmit = e  => {
-        console.log(this.state);
+        this.props.addTask(this.state.title, this.state.description);
         e.preventDefault();
     }
 
     onChange = e => {
-        console.log(e.target.name, e.target.value);
         this.setState({
             [e.target.name] : e.target.value,
         });
