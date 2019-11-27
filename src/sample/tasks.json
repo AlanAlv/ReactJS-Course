@@ -3,7 +3,7 @@
         "id": 0,
         "title": "task One",
         "description": "Lorem ipsum",
-        "done": false
+        "done": true
     },
     {
         "id": 1,
