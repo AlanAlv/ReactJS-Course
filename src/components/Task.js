@@ -1,7 +1,8 @@
-import React from 'react'
-
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class Task extends React.Component {
+
 
     styleCompleted () {
         return {
@@ -27,6 +28,10 @@ class Task extends React.Component {
             </div>
         )
     }
+}
+
+Task.propTypes = {
+    task: PropTypes.object.isRequired
 }
 
 const btnDelete = {
