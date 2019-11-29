@@ -5,6 +5,7 @@ import tasks from './sample/tasks.json'
 // Components
 import Tasks from './components/Tasks'
 import TaskForm from './components/TaskForm'
+import Posts from './components/Posts';
 
 
 class App extends React.Component {
@@ -50,6 +51,7 @@ class App extends React.Component {
           deleteTask={this.deleteTask}
           checkDone={this.checkDone}  
         />
+        <Posts />
       </div>
     );
   }
